@@ -1,6 +1,12 @@
-package com.example.apiwibuapp;
+package com.example.apiwibuapp.m;
 
-public class news {
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
+public class News {
     private Integer id;
     private Integer commentsCount;
     private String content;
@@ -12,10 +18,10 @@ public class news {
     private String publishedAt;
     private String genre;
 
-    public news() {
+    public News() {
     }
 
-    public news(Integer id, Integer commentsCount, String content, String description, Integer type, Integer views, String title, String thumbnail, String publishedAt, String genre) {
+    public News(Integer id, Integer commentsCount, String content, String description, Integer type, Integer views, String title, String thumbnail, String publishedAt, String genre) {
         this.id = id;
         this.commentsCount = commentsCount;
         this.content = content;
@@ -27,7 +33,8 @@ public class news {
         this.publishedAt = publishedAt;
         this.genre = genre;
     }
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     public Integer getId() {
         return id;
     }
