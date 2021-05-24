@@ -1,0 +1,27 @@
+
+{
+  "domains": {
+    "url": "",
+    "port": 8888
+  },
+  "database": {
+    "domain": "127.0.0.1",
+    "port": 3306,
+    "schema": "wibu",
+    "user": "root",
+    "pass": "123456789",
+    "table": {
+      "news": "news",
+      "wallpaper": "wallpaper"
+    }
+  },
+  "setting": {
+    "timeCheck": 5
+  },
+  "logger": {
+    "isLog": true,
+    "isFile": true,
+    "level": "debug",
+    "directory": "/asset/output/log"
+  }
+}

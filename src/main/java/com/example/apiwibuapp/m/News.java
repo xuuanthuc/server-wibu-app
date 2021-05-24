@@ -1,117 +1,49 @@
 package com.example.apiwibuapp.m;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 
-@Entity
 public class News {
-    private Integer id;
-    private Integer commentsCount;
-    private String content;
-    private String description;
-    private Integer type;
-    private Integer views;
-    private String title;
-    private String thumbnail;
-    private String publishedAt;
-    private String genre;
-
-    public News() {
-    }
-
-    public News(Integer id, Integer commentsCount, String content, String description, Integer type, Integer views, String title, String thumbnail, String publishedAt, String genre) {
-        this.id = id;
-        this.commentsCount = commentsCount;
-        this.content = content;
-        this.description = description;
-        this.type = type;
-        this.views = views;
-        this.title = title;
-        this.thumbnail = thumbnail;
-        this.publishedAt = publishedAt;
-        this.genre = genre;
-    }
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public Integer getCommentsCount() {
-        return commentsCount;
-    }
-
-    public void setCommentsCount(Integer commentsCount) {
-        this.commentsCount = commentsCount;
-    }
-
-    public String getContent() {
-        return content;
-    }
-
-    public void setContent(String content) {
-        this.content = content;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public Integer getType() {
-        return type;
-    }
-
-    public void setType(Integer type) {
-        this.type = type;
-    }
-
-    public Integer getViews() {
-        return views;
-    }
-
-    public void setViews(Integer views) {
-        this.views = views;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getThumbnail() {
-        return thumbnail;
-    }
-
-    public void setThumbnail(String thumbnail) {
-        this.thumbnail = thumbnail;
-    }
-
-    public String getPublishedAt() {
-        return publishedAt;
-    }
-
-    public void setPublishedAt(String publishedAt) {
-        this.publishedAt = publishedAt;
-    }
-
-    public String getGenre() {
-        return genre;
-    }
-
-    public void setGenre(String genre) {
-        this.genre = genre;
-    }
+    @SerializedName("id")
+    @Expose
+    public Integer id;
+    @SerializedName("type")
+    @Expose
+    public Integer type;
+    @SerializedName("title")
+    @Expose
+    public String title;
+    @SerializedName("description")
+    @Expose
+    public String description;
+    @SerializedName("comments_count")
+    @Expose
+    public Integer commentsCount;
+    @SerializedName("views")
+    @Expose
+    public Integer views;
+    @SerializedName("has_videos")
+    @Expose
+    public Boolean hasVideos;
+    @SerializedName("is_featured")
+    @Expose
+    public Boolean isFeatured;
+    @SerializedName("slug")
+    @Expose
+    public String slug;
+    @SerializedName("thumbnail")
+    @Expose
+    public String thumbnail;
+    @SerializedName("published_at")
+    @Expose
+    public String publishedAt;
+    @SerializedName("content")
+    @Expose
+    public String content;
+    @SerializedName("genre")
+    @Expose
+    public Genre genre;
+    @SerializedName("thumbnail_small")
+    @Expose
+    public String thumbnailSmall;
 }

@@ -3,24 +3,22 @@ package com.example.apiwibuapp.s;
 import com.example.apiwibuapp.m.News;
 import com.example.apiwibuapp.r.NewsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+
+@Component
 @Service
-public class NewsService {
+public class NewsService implements  INewsService{
+
     @Autowired
-    private NewsRepository newsRepo;
-    public List<News> listAll(){
-        return newsRepo.findAll();
+    private NewsRepository newsRepository;
+
+    @Override
+    public List<News> getAll(){
+        return newsRepository.getAll();
     }
-    public void save(News news){
-        newsRepo.save(news);
-    }
-    public News get(Integer id){
-        return newsRepo.findById(id).get();
-    }
-    public void delete(Integer id){
-        newsRepo.deleteById(id);
-    }
+
 }
