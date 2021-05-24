@@ -4,12 +4,15 @@ import com.example.apiwibuapp.m.Genre;
 import com.example.apiwibuapp.m.News;
 import com.google.gson.reflect.TypeToken;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import java.lang.reflect.Type;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+
+@Repository
 public class NewsRepository extends BaseRepository{
     String[] columns = new String[]{
             "id" , "type" , "title" , "description" , "commentsCount" , "views" , "hasVideos" ,
