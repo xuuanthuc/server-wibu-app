@@ -21,7 +21,7 @@ public class NewsRepository extends BaseRepository{
         appDatabase.connect(connection -> {
             try {
                 Statement statement = connection.createStatement();
-                String query = String.format("SELECT * FROM %s" , appStorage.config.database.table.blog);
+                String query = String.format("SELECT * FROM %s" , appStorage.config.database.table.news);
                 ResultSet resultSet = statement.executeQuery(query);
                 while (resultSet.next()) {
                     News news = new News();

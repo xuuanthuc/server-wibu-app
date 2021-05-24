@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/news")
+@RequestMapping("api/v1/news")
 public class NewsController {
     @Autowired
     private INewsService service;

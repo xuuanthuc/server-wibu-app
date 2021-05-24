@@ -4,9 +4,9 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 public class ConfigDatabaseTable {
-	@SerializedName("blog")
+	@SerializedName("news")
 	@Expose
-	public String blog;
+	public String news;
 	@SerializedName("item")
 	@Expose
 	public String item;
