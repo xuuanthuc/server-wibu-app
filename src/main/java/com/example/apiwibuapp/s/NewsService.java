@@ -20,4 +20,9 @@ public class NewsService implements  INewsService{
         return newsRepository.getAll();
     }
 
+    @Override
+    public List<News> getByType(String type) {
+        return newsRepository.getByType(type);
+    }
+
 }

@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -16,10 +17,17 @@ public class NewsController {
     @Autowired
     private INewsService service;
 
-
+//
+//    @GetMapping("")
+//    public ResponseEntity getNewslist(){
+//        List<News> newsList = service.getAll();
+//        return ResponseEntity.ok(newsList);
+//    }
     @GetMapping("")
-    public ResponseEntity getNewslist(){
-        List<News> newsList = service.getAll();
+    public ResponseEntity getTypeNews(@RequestParam("type") String type){
+
+        List<News> newsList = service.getByType(type);
         return ResponseEntity.ok(newsList);
     }
+
 }

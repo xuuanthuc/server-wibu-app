@@ -6,4 +6,5 @@ import java.util.List;
 
 public interface INewsService {
     List<News> getAll();
+    List<News> getByType(String type);
 }
