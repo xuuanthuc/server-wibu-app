@@ -25,7 +25,6 @@ public class NewsController {
 //    }
     @GetMapping("")
     public ResponseEntity getTypeNews(@RequestParam("type") String type){
-
         List<News> newsList = service.getByType(type);
         return ResponseEntity.ok(newsList);
     }

@@ -1,28 +1,18 @@
 Manifest-Version: 1.0
 Main-Class: com.example.apiwibuapp.Application
-Class-Path: spring-boot-starter-web-2.4.6.jar android-json-0.0.20131108.
- vaadin1.jar junit-jupiter-params-5.7.2.jar assertj-core-3.18.1.jar apig
- uardian-api-1.1.0.jar spring-boot-autoconfigure-2.4.6.jar byte-buddy-ag
- ent-1.10.22.jar accessors-smart-2.3.1.jar slf4j-api-1.7.30.jar xmlunit-
- core-2.7.0.jar gson-2.8.5.jar spring-aop-5.3.7.jar jackson-datatype-jsr
- 310-2.11.4.jar junit-jupiter-engine-5.7.2.jar spring-webmvc-5.3.7.jar l
- og4j-api-2.13.3.jar logback-classic-1.2.3.jar spring-expression-5.3.7.j
- ar h2-1.4.200.jar spring-beans-5.3.7.jar jackson-annotations-2.11.4.jar
-  spring-jcl-5.3.7.jar junit-platform-commons-1.7.2.jar byte-buddy-1.10.
- 22.jar tomcat-embed-websocket-9.0.46.jar spring-test-5.3.7.jar spring-b
- oot-starter-json-2.4.6.jar hamcrest-2.2.jar jul-to-slf4j-1.7.30.jar asm
- -5.0.4.jar spring-boot-starter-2.4.6.jar log4j-to-slf4j-2.13.3.jar snak
- eyaml-1.27.jar jakarta.el-3.0.3.jar spring-boot-starter-test-2.4.6.jar 
- spring-boot-test-2.4.6.jar mockito-core-3.6.28.jar spring-boot-starter-
- tomcat-2.4.6.jar logback-core-1.2.3.jar jakarta.annotation-api-1.3.5.ja
- r junit-jupiter-api-5.7.2.jar json-path-2.4.0.jar spring-boot-test-auto
- configure-2.4.6.jar opentest4j-1.2.0.jar objenesis-3.1.jar spring-conte
- xt-5.3.7.jar json-smart-2.3.1.jar jackson-datatype-jdk8-2.11.4.jar jaka
- rta.activation-api-1.2.2.jar jakarta.xml.bind-api-2.3.3.jar junit-jupit
- er-5.7.2.jar tomcat-embed-core-9.0.46.jar jackson-databind-2.11.4.jar j
- soup-1.13.1.jar spring-boot-starter-logging-2.4.6.jar jsonassert-1.5.0.
- jar spring-web-5.3.7.jar jackson-core-2.11.4.jar mysql-connector-java-8
- .0.25.jar commons-io-2.8.0.jar jackson-module-parameter-names-2.11.4.ja
- r junit-platform-engine-1.7.2.jar spring-boot-2.4.6.jar mockito-junit-j
- upiter-3.6.28.jar spring-core-5.3.7.jar
+Class-Path: spring-expression-5.3.7.jar spring-boot-2.4.6.jar tomcat-emb
+ ed-core-9.0.46.jar jackson-databind-2.11.4.jar h2-1.4.200.jar slf4j-api
+ -1.7.30.jar jackson-module-parameter-names-2.11.4.jar spring-boot-start
+ er-tomcat-2.4.6.jar spring-context-5.3.7.jar mysql-connector-java-8.0.2
+ 5.jar spring-webmvc-5.3.7.jar logback-classic-1.2.3.jar log4j-to-slf4j-
+ 2.13.3.jar spring-boot-starter-json-2.4.6.jar spring-boot-starter-2.4.6
+ .jar spring-aop-5.3.7.jar jackson-datatype-jsr310-2.11.4.jar jackson-co
+ re-2.11.4.jar spring-beans-5.3.7.jar spring-core-5.3.7.jar spring-boot-
+ starter-logging-2.4.6.jar spring-boot-starter-web-2.4.6.jar gson-2.8.5.
+ jar jakarta.el-3.0.3.jar logback-core-1.2.3.jar snakeyaml-1.27.jar jsou
+ p-1.13.1.jar jul-to-slf4j-1.7.30.jar tomcat-embed-websocket-9.0.46.jar 
+ spring-boot-autoconfigure-2.4.6.jar jakarta.annotation-api-1.3.5.jar ja
+ ckson-datatype-jdk8-2.11.4.jar spring-web-5.3.7.jar jackson-annotations
+ -2.11.4.jar commons-io-2.8.0.jar spring-jcl-5.3.7.jar log4j-api-2.13.3.
+ jar
 
