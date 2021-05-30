@@ -7,6 +7,9 @@ public class ConfigDatabaseTable {
 	@SerializedName("news")
 	@Expose
 	public String news;
+	@SerializedName("wallpaper")
+	@Expose
+	public String wallpaper;
 	@SerializedName("item")
 	@Expose
 	public String item;
